@@ -1,6 +1,6 @@
 
 function testGS() {
-    const url = "https://script.google.com/macros/s/AKfycbzgOYpkqtvs0GAEECQO0KW7jY32wWOPqXmA9LLvzdQES-Kiuu1EUAaBd4YzNdeGyMPQ/exec";
+    const url = "https://script.google.com/macros/s/AKfycbyMT4vmKL_uF2kmHt5m9ideaMYr2tmlKsfHG9uDC70jn-QncQPjidNeuh0TPORbqaSW/exec";
 
     fetch(url)
         .then(d => d.json())
@@ -11,7 +11,7 @@ function testGS() {
 
 
 function addGS() {
-    const url = "https://script.google.com/macros/s/AKfycbzgOYpkqtvs0GAEECQO0KW7jY32wWOPqXmA9LLvzdQES-Kiuu1EUAaBd4YzNdeGyMPQ/exec";
+    const url = "https://script.google.com/macros/s/AKfycbyMT4vmKL_uF2kmHt5m9ideaMYr2tmlKsfHG9uDC70jn-QncQPjidNeuh0TPORbqaSW/exec";
 
     fetch(url, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -22,7 +22,7 @@ function addGS() {
         },
         redirect: 'follow', // manual, *follow, error
         //referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify({ First: "Arion", Phone: "06942987345", Last: "Ismaili" }) // body data type must match "Content-Type" header
+        body: JSON.stringify({ name: "Arion" }) // body data type must match "Content-Type" header
     });
 }
 
